@@ -1,0 +1,7 @@
+{
+  "name": "coLocationApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
