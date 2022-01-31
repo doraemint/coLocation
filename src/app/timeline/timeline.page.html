@@ -1,0 +1,48 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>timeline</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="header">
+    <img class="logo-header" src="../../assets/logo.png">
+    <label class="text-header"> Co-location</label>
+    <ion-icon name="home" class="home-icon"></ion-icon>
+  </div>
+
+  <div>
+    <ion-card>
+      <ion-card-content>
+        กรอกข้อมูลส่วนตัว
+      </ion-card-content>
+    </ion-card>
+
+    <div>
+      <ion-item>
+        <ion-label>ชื่อ - นามสกุล: </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>วัน / เดือน / ปี: </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>เลขประจำตัวประชาชน: </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>ที่อยู่ปัจจุบัน: </ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <div class="button">
+        <ion-button (click)="nextPage()">ต่อไป</ion-button>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

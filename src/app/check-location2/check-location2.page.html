@@ -1,0 +1,25 @@
+<ion-content>
+  <div class="header">
+    <img class="logo-header" src="../../assets/logo.png">
+    <label class="text-header"> Co-location</label>
+    <ion-icon name="home" class="home-icon"></ion-icon>
+  </div>
+
+  <div class="item">
+    <ion-item>
+      <ion-label>สถานที่</ion-label>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div class="button">
+    <ion-button (click)="nextPage()">ส่ง</ion-button>
+  </div>
+
+  <h5>*ในกรณีที่ไม่พบสถานที่ที่ต้องการเลือก </h5>
+  <h5>กรุณาเลือกสถานที่ใกล้เคียง*</h5>
+
+</ion-content>

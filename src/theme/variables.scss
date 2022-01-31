@@ -234,3 +234,22 @@
     --ion-card-background: #1e1e1e;
   }
 }
+.header{
+  --ion-background-color: #dae0ff;
+}
+  .header .logo-header{
+    width: 50px;
+    height: 40px;
+  }
+  .header .text-header{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+  }
+  .header .home-icon{
+    font-size: 30px;
+    color: #5372ff;
+    padding-top: 10px;
+    padding-right: 10px;
+    float: right;
+  }
