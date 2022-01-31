@@ -13,6 +13,12 @@ export class TimelineEndPage implements OnInit {
   ngOnInit() {
   }
 
+  goHomepage() {
+    this.route.navigate(['/home']);
+
+  }
+
+
   // nextPage(){
   //   this.route.navigate(['/timeline-info2']);
   // }

@@ -13,7 +13,13 @@ export class CheckLocationPage implements OnInit {
   ngOnInit() {
   }
 
-  nextPage(){
+  goHomepage() {
+    this.route.navigate(['/home']);
+
+  }
+
+
+  nextPage() {
     this.route.navigate(['/check-location2']);
   }
 }

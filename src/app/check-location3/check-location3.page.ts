@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-check-location3',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckLocation3Page implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit() {
   }
+
+goHomepage(){
+this.route.navigate(['/home']);
+
+}
+
 
 }
