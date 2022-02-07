@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-check-location3',
@@ -8,7 +8,13 @@ import { Router } from '@angular/router';
 })
 export class CheckLocation3Page implements OnInit {
 
-  constructor(private route: Router) { }
+  getValueAddress;
+  constructor(private route: Router, private router: ActivatedRoute) {
+    const getValue = this.router.snapshot.paramMap.get("place")
+    console.log('getValue', getValue);
+    this.getValueAddress =  JSON.parse(getValue);
+    console.log('a', this.getValueAddress);
+  }
 
   ngOnInit() {
   }

@@ -8,10 +8,8 @@
   <div class="item">
     <ion-item>
       <ion-label>สถานที่</ion-label>
-      <ion-select placeholder="Select One">
-        <ion-select-option value="f">Central Ladpao</ion-select-option>
-        <ion-select-option value="m">Central Praram 9 </ion-select-option>
-        <ion-select-option value="m">The Street</ion-select-option>
+      <ion-select placeholder="Select One" [(ngModel)]="valuePlace" (ionChange)="selectPlace()">
+        <ion-select-option [value]="p" *ngFor="let p of places">{{p}}</ion-select-option>
       </ion-select>
     </ion-item>
   </div>

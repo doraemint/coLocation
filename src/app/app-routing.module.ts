@@ -20,11 +20,11 @@ const routes: Routes = [
     loadChildren: () => import('./check-location/check-location.module').then( m => m.CheckLocationPageModule)
   },
   {
-    path: 'check-location2',
+    path: 'check-location2/:district',
     loadChildren: () => import('./check-location2/check-location2.module').then( m => m.CheckLocation2PageModule)
   },
   {
-    path: 'check-location3',
+    path: 'check-location3/:place',
     loadChildren: () => import('./check-location3/check-location3.module').then( m => m.CheckLocation3PageModule)
   },
   {

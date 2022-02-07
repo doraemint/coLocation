@@ -8,20 +8,15 @@
   <div class="item">
     <ion-item>
       <ion-label>เขต</ion-label>
-      <ion-select placeholder="Select One">
-        <ion-select-option value="f">ห้วยขวาง</ion-select-option>
-        <ion-select-option value="m">ดินแดง</ion-select-option>
-        <ion-select-option value="m">สุทธิสาร</ion-select-option>
-        <ion-select-option value="m">ลาดพร้าว</ion-select-option>
+      <ion-select placeholder="Select One" [(ngModel)]="valueDistrict" (ionChange)="selectDistrict()">
+        <ion-select-option [value]="dis" *ngFor="let dis of district">{{dis}}</ion-select-option>
+      
       </ion-select>
     </ion-item>
     <ion-item>
       <ion-label>แขวง</ion-label>
-      <ion-select placeholder="Select One">
-        <ion-select-option value="f">ห้วยขวาง</ion-select-option>
-        <ion-select-option value="m">ดินแดง</ion-select-option>
-        <ion-select-option value="m">สุทธิสาร</ion-select-option>
-        <ion-select-option value="m">ลาดพร้าว</ion-select-option>
+      <ion-select placeholder="Select One" [(ngModel)]="valueSubDistrict" (ionChange)="selectSubDistrict()">
+        <ion-select-option [value]="subDis" *ngFor="let subDis of subDistrict">{{subDis}}</ion-select-option>
       </ion-select>
     </ion-item>
 

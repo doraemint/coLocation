@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: "AIzaSyC2GGBKH37jtyxVub7sT3_hFVG2JGqljDk",
+    authDomain: "colocation-app.firebaseapp.com",
+    projectId: "colocation-app",
+    storageBucket: "colocation-app.appspot.com",
+    messagingSenderId: "264839927369",
+    appId: "1:264839927369:web:24bbdeb1254c123008d198",
+    measurementId: "G-YCMK4G8L4Y"
+  }
 };
 
 /*
