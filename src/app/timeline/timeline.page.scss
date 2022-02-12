@@ -10,8 +10,8 @@ ion-item {
 }
 
 .button {
- margin-top: 10%;
- padding-left: 20%;
+  margin-top: 10%;
+  padding-left: 20%;
   // width: 80%;
   // height: 40%;
 }
@@ -33,4 +33,30 @@ ion-input {
   width: 80%;
   --color: grey;
   --background: #ffffff;
+}
+
+.thirdPart {
+  .content {
+    padding-top: 10%;
+  }
+  .seperate-item {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .item {
+    padding-top: 25px;
+  }
+  ion-label {
+    font-weight: bold;
+    text-align: center;
+  }
+  ion-item {
+    margin: auto;
+    width: 80%;
+  }
+  ion-button {
+    float: right;
+    padding-right: 40px;
+  }
 }
